@@ -1,0 +1,61 @@
+{
+  "name": "my-new-project",
+  "main": "node_modules/expo/AppEntry.js",
+  "private": true,
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "eject": "expo eject",
+    "test": "node ./node_modules/jest/bin/jest.js --watchAll",
+    "postinstall": "node_modules/.bin/rn-nodeify --install crypto,fs,https --hack"
+  },
+  "jest": {
+    "preset": "jest-expo"
+  },
+  "dependencies": {
+    "@expo/samples": "2.1.1",
+    "aws-sdk": "latest",
+    "body-parser": "latest",
+    "create-react-native-module": "^0.12.0",
+    "crypto": "^1.0.1",
+    "ejs": "latest",
+    "events": "^3.0.0",
+    "expo": "^33.0.0",
+    "express": "latest",
+    "firebase": "^6.6.2",
+    "fs": "0.0.1-security",
+    "https-browserify": "0.0.1",
+    "mysql": "^2.17.1",
+    "net": "^1.0.2",
+    "react": "16.5.0",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-33.0.0.tar.gz",
+    "react-native-crypto": "^2.2.0",
+    "react-native-fs": "^2.16.2",
+    "react-native-level-fs": "^2.0.1",
+    "react-native-randombytes": "^2.3.0",
+    "react-native-secure-randombytes": "^3.0.0",
+    "react-navigation": "^2.18.2",
+    "stream": "0.0.2",
+    "timers": "^0.1.1",
+    "tls": "0.0.1",
+    "util": "^0.12.1",
+    "vm": "^0.1.0"
+  },
+  "devDependencies": {
+    "babel-preset-expo": "^5.0.0",
+    "jest-expo": "^33.0.0",
+    "rn-nodeify": "^6.0.1",
+    "standard": "^14.3.1"
+  },
+  "react-native": {
+    "crypto": "react-native-crypto",
+    "https": "https-browserify",
+    "fs": "react-native-level-fs"
+  },
+  "browser": {
+    "crypto": "react-native-crypto",
+    "https": "https-browserify",
+    "fs": "react-native-level-fs"
+  }
+}
