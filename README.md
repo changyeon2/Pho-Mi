@@ -1,4 +1,4 @@
-# Pho-Mi(PhotoMissionForMe)
+# Pho-Mi (PhotoMissionForMe)
 
 Before you start, move to terminal and do 'npm install'.
 
